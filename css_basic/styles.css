@@ -1,0 +1,31 @@
+/* styles.css - Flexbox positioning for layout */
+
+/* Make body a flex container in column direction*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* make body fill viewport height*/
+    margin: 0;
+}
+
+/* Main contains article + aside */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* automatic width and height */
+}
+
+/* Article takes 2/3 of main, aside takes 1/3 */
+article {
+    flex: 2;
+    overflow-y: auto; /* scroll if content is too tall */
+    padding: 10px; /* optional spacing */
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
